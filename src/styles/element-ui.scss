@@ -1,0 +1,52 @@
+@import '~element-ui/lib/theme-chalk/index.css';
+.el-scrollbar__wrap {
+  overflow-x: hidden !important;
+}
+.el-menu-item,
+.el-submenu__title {
+  i {
+    color: inherit;
+  }
+}
+.el-submenu,
+.el-menu-item {
+  [class*='icon-'] {
+    width: 24px;
+    margin-right: 5px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+// when menu collapsed
+.el-menu--vertical {
+  .nest-menu .el-submenu > .el-submenu__title,
+  .el-menu-item {
+    &:hover {
+      background-color: $menuHover !important;
+    }
+  }
+
+  // the scroll bar appears when the subMenu is too long
+  > .el-menu--popup {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track-piece {
+      background: #d3dce6;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #99a9bf;
+      border-radius: 20px;
+    }
+  }
+}
+
+.el-card {
+  overflow: visible;
+}

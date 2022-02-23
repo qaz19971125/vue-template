@@ -1,0 +1,23 @@
+.icon-menu-item:before {
+  content: '\e651';
+}
+
+.icon-goto:before {
+  content: '\e6d8';
+}
+
+.icon-package:before {
+  content: '\e728';
+}
+
+.icon-function:before {
+  content: '\e72a';
+}
+
+.icon-test:before {
+  content: '\e600';
+}
+
+.icon-save:before {
+  content: '\e6e2';
+}
